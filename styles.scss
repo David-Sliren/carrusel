@@ -40,8 +40,10 @@ main{
 
     .carrusel{
         background-color: rgb(244, 0, 0);
-        width: 700px;
-        height: 500px;
+        width: 80%;
+        max-width: 700px; 
+        max-height: 500px;
+        height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -151,5 +153,11 @@ main{
                 transform: rotateY(360deg) translateY(30px);
                 transition: 1s ease;
                 }
+}
 
+@media (max-width: 821px) {
+    .carrusel{
+        width: 50%;
+        height: 50%;
+    }
 }
